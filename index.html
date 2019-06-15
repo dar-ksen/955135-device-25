@@ -17,13 +17,13 @@
          <label for="header-search"><span class="visually-hidden">Поиск по сайту</span></label>
          <button class="search-btn" type="submit">Найти</button>
        </form>
-       <a class="header-input" href="#">Войти</a>
-       <a class="header-compare" href="#">Сравнить</a>
-       <a class="header-cart" href="#">Корзина</a>
+       <a class="header-menu header-input" href="#">Войти</a>
+       <a class="header-menu header-compare" href="#">Сравнить</a>
+       <a class="header-menu header-cart" href="#">Корзина</a>
      </div>
      <nav class="main-navigation">
        <ul class="site-navigation reset-list">
-         <li><a class="site-navigation-item navigation-catalog" href="#">Каталог товаров</a>
+         <li><a class="site-navigation-item navigation-catalog" href="catalog.html">Каталог товаров</a>
            <ul class="catalog-list reset-list visually-hidden">
              <ul class="catalog-column reset-list">
                <li><a class="catalog-item" href="#">Виртуальная реальность</a></li>
@@ -127,41 +127,53 @@
    <section class="products container">
      <h2 class = "visually-hidden">Продукты</h2>
      <ul class="products-list reset-list">
-       <li class="products-item">
-         <div class="products-item-image">
-           <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность картинка">
-         </div>
+       <li>
+         <a class="products-item" href="#">
+           <div class="products-item-image">
+             <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность картинка">
+           </div>
          <h3>Виртуальная реальность</h3>
+         </a>
        </li>
-       <li class="products-item">
-         <div class="products-item-image">
-           <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-         </div>
-         <h3>Моноподы для селфи</h3>
+       <li>
+         <a class="products-item" href="#">
+           <div class="products-item-image">
+             <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+           </div>
+           <h3>Моноподы для селфи</h3>
+         </a>
        </li>
-       <li class="products-item">
-         <div class="products-item-image">
-           <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-         </div>
-         <h3>Экшн-камеры</h3>
+       <li>
+         <a class="products-item" href="#">
+           <div class="products-item-image">
+             <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+           </div>
+           <h3>Экшн-камеры</h3>
+         </a>
        </li>
-       <li class="products-item">
-         <div class="products-item-image">
-           <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-         </div>
-         <h3>Фитнес-браслеты</h3>
+       <li>
+         <a class="products-item" href="#">
+           <div class="products-item-image">
+             <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+           </div>
+           <h3>Фитнес-браслеты</h3>
+         </a>
        </li>
-       <li class="products-item">
-         <div class="products-item-image">
-           <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-         </div>
+       <li>
+         <a class="products-item" href="#">
+           <div class="products-item-image">
+             <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+           </div>
          <h3>Умные часы</h3>
+         </a>
        </li>
-       <li class="products-item">
-         <div class="products-item-image">
-           <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-         </div>
-         <h3>Квадрокоптеры</h3>
+       <li>
+         <a class="products-item" href="#">
+           <div class="products-item-image">
+             <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+           </div>
+           <h3>Квадрокоптеры</h3>
+         </a>
        </li>
      </ul>
    </section>
@@ -201,10 +213,10 @@
    </section>
    <section class="brand container">
      <h2 class="visually-hidden">Наши бренды</h2>
-     <a class="brand-item" href="#"><img src="img/logo-1.jpg" alt="dji"></a>
-     <a class="brand-item" href="#"><img src="img/logo-2.jpg" alt="dji"></a>
-     <a class="brand-item" href="#"><img src="img/logo-3.jpg" alt="dji"></a>
-     <a class="brand-item" href="#"><img src="img/logo-4.jpg" alt="dji"></a>
+     <a class="brand-item brand-item-dji" href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="dji"></a>
+     <a class="brand-item brand-item-spgadgest" href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="spgadgest"></a>
+     <a class="brand-item brand-item-gopro" href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="gopro"></a>
+     <a class="brand-item brand-item-vive" href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="vive"></a>
    </section>
 
    <div class="index-column container">
@@ -231,9 +243,9 @@
    <div class="footer-wrap container">
      <div class="footer-top">
        <a class="footer-logo" href="#"><img src="img/gold-logo.svg" alt="Логотип магазина DEVICE" width="163" height="35"></a>
-       <a class="footer-input" href="#">Войти</a>
-       <a class="footer-compare" href="#">Сравнить</a>
-       <a class="footer-cart" href="#">Корзина</a>
+       <a class="footer-menu footer-input" href="#">Войти</a>
+       <a class="footer-menu footer-compare" href="#">Сравнить</a>
+       <a class="footer-menu footer-cart" href="#">Корзина</a>
      </div>
      <div class="footer-middle">
        <address>
