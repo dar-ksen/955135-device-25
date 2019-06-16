@@ -24,18 +24,18 @@
      <nav class="main-navigation">
        <ul class="site-navigation reset-list">
          <li><a class="site-navigation-item navigation-catalog" href="catalog.html">Каталог товаров</a>
-           <ul class="catalog-list reset-list visually-hidden">
-             <ul class="catalog-column reset-list">
-               <li><a class="catalog-item" href="#">Виртуальная реальность</a></li>
-               <li><a class="catalog-item" href="#">Моноподы для селфи</a></li>
-               <li><a class="catalog-item" href="#">Экшн-камеры</a></li>
+           <ul class="sub-menu reset-list">
+             <ul class="sub-column reset-list">
+               <li><a class="sub-item" href="#">Виртуальная реальность</a></li>
+               <li><a class="sub-item" href="#">Моноподы для селфи</a></li>
+               <li><a class="sub-item" href="#">Экшн-камеры</a></li>
              </ul>
-             <ul class="catalog-column reset-list">
-               <li><a class="catalog-item" href="#">Фитнес-браслеты</a></li>
-               <li><a class="catalog-item" href="#">Умные часы</a></li>
+             <ul class="sub-column reset-list">
+               <li><a class="sub-item" href="#">Фитнес-браслеты</a></li>
+               <li><a class="sub-item" href="#">Умные часы</a></li>
              </ul>
-             <ul class="catalog-column reset-list">
-               <li><a class="catalog-item" href="#">Квадрскоптеры</a></li>
+             <ul class="sub-column reset-list">
+               <li><a class="sub-item" href="#">Квадрскоптеры</a></li>
              </ul>
            </ul>
          </li>
@@ -235,7 +235,7 @@
        <h2 class="title">Контакты</h2>
        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
        <a class="btn-map" href=""><img src="img/map.jpg" width="560" height="222" alt="Мини карта"></a>
-       <a class="btn" href="#">Подробнее о нас</a>
+       <a class="btn btn-write-us" href="#">Подробнее о нас</a>
      </section>
    </div>
  </main>
@@ -275,5 +275,29 @@
 
    </div>
  </footer>
+ <section class="modal modal-write-us">
+   <h2 class="visually-hidden">Напишите нам</h2>
+   <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+     <div class="user-name-wrap">
+       <label for="user-name">Ваше имя:</label>
+       <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия" required>
+     </div>
+       <div class="user-email-wrap"><label for="user-email">Ваш e-mail:</label>
+       <input type="email" id="user-email" name="user-email" placeholder="email@example.com" required>
+     </div>
+     <div class="user-letter-wrap">
+       <label for="user-letter">Текст письма:</label>
+       <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме" required></textarea>
+     </div>
+     <button class="btn" type="submit">Отправить</button>
+   </form>
+   <button class="modal-close" aria-label="Закрыть модальное окно"></button>
+ </section>
+ <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCCtu2YJ" width="940" height="560"></iframe>
+    <button class="modal-close" aria-label="Закрыть модальное окно"></button>
+  </section>
+<script src="js/script.js"></script>
 </body>
 </html>
