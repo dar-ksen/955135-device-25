@@ -5,7 +5,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
  <header class="main-header container">
@@ -13,9 +13,9 @@
      <div class="header-top">
        <a class="index-logo"><img src="img/logo.svg" width="163" height="35" alt="Логотип магазина DEVICE"></a>
        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-         <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту">
+         <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
          <label for="header-search"><span class="visually-hidden">Поиск по сайту</span></label>
-         <button class="search-btn" type="submit">Найти</button>
+         <button class="search-btn visually-hidden" type="submit" >Найти</button>
        </form>
        <a class="header-menu header-input" href="#">Войти</a>
        <a class="header-menu header-compare" href="#">Сравнить</a>
@@ -128,22 +128,22 @@
        </table>
       </div>
      </div>
+   </section><!-- /.top-products -->
 
-   </section>
    <section class="products container">
      <h2 class = "visually-hidden">Продукты</h2>
      <ul class="products-list reset-list">
        <li>
          <a class="products-item" href="#">
            <div class="products-item-image">
-             <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность картинка">
+             <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
            </div>
          <h3>Виртуальная реальность</h3>
          </a>
        </li>
        <li>
-         <a class="products-item" href="#">
-           <div class="products-item-image">
+         <a class="products-item products-item-monopod" href="#">
+           <div class="products-item-image ">
              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
            </div>
            <h3>Моноподы для селфи</h3>
@@ -182,7 +182,8 @@
          </a>
        </li>
      </ul>
-   </section>
+   </section><!--/.products-->
+
    <section class="service">
      <h2 class="visually-hidden">Сервисы</h2>
      <div class="index-column container">
@@ -216,14 +217,15 @@
          </div>
        </div>
      </div>
-   </section>
+   </section><!-- /.service-->
+
    <section class="brand container">
      <h2 class="visually-hidden">Наши бренды</h2>
      <a class="brand-item brand-item-dji" href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="dji"></a>
      <a class="brand-item brand-item-spgadgest" href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="spgadgest"></a>
      <a class="brand-item brand-item-gopro" href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="gopro"></a>
      <a class="brand-item brand-item-vive" href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="vive"></a>
-   </section>
+   </section> <!-- /.brand -->
 
    <div class="index-column container">
      <section class="about-us">
@@ -240,11 +242,12 @@
      <section class="contacts">
        <h2 class="title">Контакты</h2>
        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-       <a class="btn-map" href=""><img src="img/map.jpg" width="560" height="222" alt="Мини карта"></a>
-       <a class="btn btn-write-us" href="#">Подробнее о нас</a>
+       <a class="btn-map" href="#"><img src="img/map.jpg" width="560" height="222" alt="Мини карта"></a>
+       <a class="btn btn-write-us" href="#">Напишите нам</a>
      </section>
    </div>
  </main>
+
  <footer class="main-footer">
    <div class="footer-wrap container">
      <div class="footer-top">
@@ -304,6 +307,6 @@
     <iframe src="https://yandex.ru/map-widget/v1/-/CCCtu2YJ" width="940" height="560"></iframe>
     <button class="modal-close" aria-label="Закрыть модальное окно"></button>
   </section>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

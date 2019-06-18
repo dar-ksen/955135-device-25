@@ -69,31 +69,17 @@ if (document.querySelector('.modal-write-us')) {
 });
 }
 
-/*var modalCart = document.querySelector('.modal-cart');
-var closeModalCarts = modalCart.querySelector('.modal-close');
-var continueModalCarts = modalCart.querySelector('.btn-continue');
-var carts = document.querySelector('.card-list');
 
-carts.onclick = function(evt) {
-  var target = evt.target;
-  if (!event.target.classList.contains('btn-buy')) return;
-  evt.preventDefault();
-  modalCart.classList.add('modal-show');
-}
+var search = document.querySelector('.search-input');
+var searchBtn = document.querySelector('.search-btn');
 
-closeModalCarts.addEventListener('click', function () {
-  modalCart.classList.remove('modal-show');
-});
+search.addEventListener('focus', function (evt) {
+  searchBtn.classList.remove('visually-hidden');
+})
 
-continueModalCarts.addEventListener('click', function () {
-  modalCart.classList.remove('modal-show');
-});
-
-window.addEventListener('keydown', function (evt){
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (modalCart.classList.contains('modal-show')) {
-      modalCart.classList.remove('modal-show');
-    }
+search.addEventListener('blur', function (evt) {
+  if (!search.value) {
+    searchBtn.classList.add('visually-hidden');
   }
-});*/
+})
+
